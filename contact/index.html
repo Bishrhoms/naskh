@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>راسلنا — نَسخ</title>
+<meta name="description" content="راسل فريق نَسخ بسؤالك أو اقتراحك.">
+<meta name="theme-color" content="#F6F1E8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14172B" media="(prefers-color-scheme: dark)">
+<link rel="alternate" hreflang="ar" href="./">
+<link rel="alternate" hreflang="en" href="../en/contact/">
+<link rel="icon" href="../assets/naskh-symbol-tile.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/site.js" defer></script>
+<script src="../assets/contact.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="lockup" href="../" aria-label="نَسخ — الصفحة الرئيسية">
+    <picture>
+      <source srcset="../assets/naskh-lockup-light.svg" media="(prefers-color-scheme: dark)">
+      <img src="../assets/naskh-lockup.svg" alt="نَسخ" width="273" height="120">
+    </picture>
+  </a>
+  <nav>
+    <a href="../support/">الدعم</a>
+    <a href="../en/contact/" lang="en" hreflang="en">English</a>
+  </nav>
+</header>
+
+<main class="doc">
+  <h1>راسلنا</h1>
+  <p class="meta">اكتب لنا سؤالك أو اقتراحك، وسنرد عليك على بريدك.</p>
+
+  <form class="form" action="https://api.web3forms.com/submit" method="POST"
+        data-sending="جارٍ الإرسال…"
+        data-success="وصلت رسالتك، شكرًا لك. سنرد عليك قريبًا."
+        data-error="تعذّر إرسال الرسالة. حاول مرة أخرى، أو راسلنا مباشرةً على hello@bishr.me.">
+    <div class="field">
+      <label for="name">الاسم <small>(اختياري)</small></label>
+      <input id="name" name="name" type="text" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="email">بريدك الإلكتروني</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+    </div>
+    <div class="field">
+      <label for="message">رسالتك</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+    <input type="hidden" name="subject" value="رسالة جديدة من موقع نَسخ">
+    <input type="hidden" name="from_name" value="Naskh website">
+    <div class="hp" aria-hidden="true">
+      <label for="botcheck">اترك هذه الخانة فارغة</label>
+      <input id="botcheck" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off">
+    </div>
+    <div class="form-actions">
+      <button class="store" type="submit">أرسل</button>
+      <span class="note">نستخدم ما ترسله فقط للرد عليك. <a href="../privacy/">سياسة الخصوصية</a></span>
+    </div>
+    <p class="status" role="status" aria-live="polite" hidden></p>
+  </form>
+
+  <p class="note">أو راسلنا مباشرةً على <a href="mailto:hello@bishr.me" dir="ltr">hello@bishr.me</a>.</p>
+</main>
+
+<footer>
+  <span>© ٢٠٢٦ نَسخ</span>
+  <a href="mailto:hello@bishr.me" dir="ltr">hello@bishr.me</a>
+  <a href="../">الصفحة الرئيسية</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Naskh</title>
+<meta name="description" content="Send the Naskh team a question or a suggestion.">
+<meta name="theme-color" content="#F6F1E8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14172B" media="(prefers-color-scheme: dark)">
+<link rel="alternate" hreflang="ar" href="../../contact/">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="icon" href="../../assets/naskh-symbol-tile.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<script src="../../assets/site.js" defer></script>
+<script src="../../assets/contact.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="lockup" href="../" aria-label="Naskh — Home">
+    <picture>
+      <source srcset="../../assets/naskh-lockup-light.svg" media="(prefers-color-scheme: dark)">
+      <img src="../../assets/naskh-lockup.svg" alt="Naskh" width="273" height="120">
+    </picture>
+  </a>
+  <nav>
+    <a href="../support/">Support</a>
+    <a href="../../contact/" lang="ar" hreflang="ar">العربية</a>
+  </nav>
+</header>
+
+<main class="doc">
+  <h1>Get in touch</h1>
+  <p class="meta">Send us a question or a suggestion, and we’ll reply by email.</p>
+
+  <form class="form" action="https://api.web3forms.com/submit" method="POST"
+        data-sending="Sending…"
+        data-success="Your message is on its way. Thank you — we’ll get back to you soon."
+        data-error="Your message couldn’t be sent. Please try again, or email us directly at hello@bishr.me.">
+    <div class="field">
+      <label for="name">Name <small>(optional)</small></label>
+      <input id="name" name="name" type="text" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+    <input type="hidden" name="subject" value="New message from the Naskh website">
+    <input type="hidden" name="from_name" value="Naskh website">
+    <div class="hp" aria-hidden="true">
+      <label for="botcheck">Leave this field empty</label>
+      <input id="botcheck" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off">
+    </div>
+    <div class="form-actions">
+      <button class="store" type="submit">Send</button>
+      <span class="note">We use what you send only to reply to you. <a href="../privacy/">Privacy Policy</a></span>
+    </div>
+    <p class="status" role="status" aria-live="polite" hidden></p>
+  </form>
+
+  <p class="note">Or email us directly at <a href="mailto:hello@bishr.me">hello@bishr.me</a>.</p>
+</main>
+
+<footer>
+  <span>© 2026 Naskh</span>
+  <a href="mailto:hello@bishr.me" dir="ltr">hello@bishr.me</a>
+  <a href="../">Home</a>
+</footer>
+</body>
+</html>
