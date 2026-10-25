@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Support — Naskh</title>
-<meta name="description" content="Quick answers about setting up Naskh on Mac, iPhone, and iPad, and about Naskh Pro.">
+<meta name="description" content="Short answers about setting up and using Naskh, Mac shortcuts, and how Free and Pro compare.">
 <meta name="theme-color" content="#F6F1E8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14172B" media="(prefers-color-scheme: dark)">
 <link rel="alternate" hreflang="ar" href="../../support/">
@@ -33,9 +33,11 @@
 
 <main class="doc">
   <h1>Support</h1>
-  <p class="meta">Common questions about setting up Naskh and Naskh Pro.</p>
+  <p class="meta">Short answers about setting up and using Naskh on Mac, iPhone, and iPad.</p>
 
-  <h2>Mac: how do I let Naskh paste for me?</h2>
+  <p class="group">On the Mac</p>
+
+  <h2>How do I let Naskh paste for me?</h2>
   <p>To paste what you pick straight into the app you’re working in, Naskh needs Accessibility access. Naskh doesn’t read your screen or what you type; it only uses this to send <kbd>⌘V</kbd>.</p>
   <ol>
     <li>Open <span class="path">System Settings → Privacy &amp; Security → Accessibility</span>.</li>
@@ -43,7 +45,30 @@
   </ol>
   <p>Switched on but not working? Remove Naskh from the list with the (−) button, then quit and reopen Naskh and turn it on again. Without this permission, Naskh copies the clip and you press <kbd>⌘V</kbd> yourself.</p>
 
-  <h2>iPhone and iPad: how do I turn on the Naskh keyboard?</h2>
+  <h2>Keyboard shortcuts</h2>
+  <dl class="keys">
+    <div><dt><kbd>⇧⌘V</kbd></dt><dd>Show your clipboard from anywhere</dd></div>
+    <div><dt><kbd>↩</kbd></dt><dd>Paste the selected clip</dd></div>
+    <div><dt><kbd>⇧↩</kbd></dt><dd>Paste as plain text</dd></div>
+    <div><dt><kbd>Space</kbd></dt><dd>Preview the clip</dd></div>
+    <div><dt><kbd>⌘R</kbd></dt><dd>Add or edit a title</dd></div>
+    <div><dt><kbd>⌘E</kbd></dt><dd>Edit the clip</dd></div>
+    <div><dt><kbd>⌘N</kbd></dt><dd>New text</dd></div>
+    <div><dt><kbd>⌘⌫</kbd></dt><dd>Delete</dd></div>
+    <div><dt><kbd>⌃⌘V</kbd></dt><dd>Paste the next clip from the Paste Stack (Pro)</dd></div>
+  </dl>
+  <p class="note">You can change the shortcuts for showing the clipboard and the Paste Stack in Naskh’s settings, under Shortcuts.</p>
+
+  <h2>How do I preview a clip before pasting it?</h2>
+  <p>Select the clip and press <kbd>Space</kbd> to see the full text, image, or link. Press <kbd>Space</kbd> again to close it.</p>
+
+  <p class="group">On iPhone and iPad</p>
+
+  <h2>How do I stop the “Allow Paste?” prompt?</h2>
+  <p>iOS asks this every time Naskh saves what you copied. Allow it once and it won’t ask again:</p>
+  <p class="path">Settings → Apps → Naskh → Paste from Other Apps → Allow</p>
+
+  <h2>How do I turn on the Naskh keyboard?</h2>
   <ol>
     <li>Open <span class="path">Settings → Apps → Naskh → Keyboards</span>.</li>
     <li>Turn on Naskh, then turn on Allow Full Access.</li>
@@ -51,15 +76,48 @@
   </ol>
   <p>The keyboard needs Full Access only to read your history stored on your device. It doesn’t log what you type and never sends anything anywhere.</p>
 
-  <h2>How do I stop the “Allow Paste?” prompt?</h2>
-  <p>iOS asks this every time Naskh saves what you copied. Allow it once and it won’t ask again:</p>
-  <ol>
-    <li>Open <span class="path">Settings → Apps → Naskh</span>.</li>
-    <li>Choose Paste from Other Apps, then Allow.</li>
-  </ol>
+  <h2>How do I add a Naskh widget?</h2>
+  <p>Touch and hold the Home Screen, then tap Edit → Add Widget and search for Naskh. The widget shows what you copied last, ready to copy again with a tap. Larger sizes are part of Naskh Pro.</p>
+
+  <h2>How do I use Naskh with Siri and Shortcuts?</h2>
+  <p>Say to Siri: “Copy the latest clip from Naskh” or “Save text to Naskh”, or use these two actions in the Shortcuts app. This is part of Naskh Pro.</p>
+
+  <p class="group">Everywhere</p>
+
+  <h2>How do I give a clip a title?</h2>
+  <p>Choose Add Title… from the clip’s menu, or press <kbd>⌘R</kbd> on the Mac. A title is a name to recognize the clip by and search for, and you can edit or remove it any time.</p>
+
+  <h2>How does search work?</h2>
+  <p>Naskh searches your clips and their titles without being thrown off by Arabic diacritics, so typing «كتب» finds «كَتَبَ». With Naskh Pro it also searches the text inside images, such as screenshots. Your device reads that text itself, and images are never sent anywhere.</p>
+
+  <h2>How do I select several clips at once?</h2>
+  <p>On iPhone and iPad, tap Select. On the Mac, ⌘-click to add a clip or ⇧-click to select a range. Then delete them or pin them to a pinboard in one go. Pasting several clips in order is part of Naskh Pro.</p>
+
+  <p class="group">Naskh Pro</p>
+
+  <h2>What’s the difference between Free and Pro?</h2>
+  <div class="plans" role="region" aria-label="Free and Pro compared" tabindex="0">
+    <table>
+      <thead><tr><th scope="col"></th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">History</th><td>Last 50 clips</td><td>Unlimited</td></tr>
+        <tr><th scope="row">Pinboards</th><td>One</td><td>Unlimited</td></tr>
+        <tr><th scope="row">Diacritic-free search, titles, editing, preview, multi-select</th><td>Included</td><td>Included</td></tr>
+        <tr><th scope="row">Paste as plain text</th><td>Included</td><td>Included</td></tr>
+        <tr><th scope="row">Keyboard and share extension</th><td>Included</td><td>Included</td></tr>
+        <tr><th scope="row">Widgets</th><td>Small</td><td>All sizes</td></tr>
+        <tr><th scope="row">iCloud sync</th><td>—</td><td>Included</td></tr>
+        <tr><th scope="row">Search the text in images</th><td>—</td><td>Included</td></tr>
+        <tr><th scope="row">Text transforms</th><td>—</td><td>Included</td></tr>
+        <tr><th scope="row">Paste Stack and pasting several clips in order</th><td>—</td><td>Included</td></tr>
+        <tr><th scope="row">Siri and Shortcuts</th><td>—</td><td>Included</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Naskh Pro comes as a yearly subscription that starts with a 14-day free trial, a monthly subscription, or a one-time lifetime purchase. Clips pinned to a pinboard are never removed.</p>
 
   <h2>I bought Naskh Pro. How do I restore it on another device?</h2>
-  <p>Make sure you’re signed in with the same Apple Account you bought it with, then open Naskh’s settings and tap Restore Purchases.</p>
+  <p>Sign in with the same Apple Account you bought it with, then tap Restore Purchases in Naskh’s settings.</p>
 
   <h2>How do I manage or cancel my subscription?</h2>
   <p>Apple manages subscriptions, and you can change or cancel yours at any time:</p>
@@ -68,6 +126,11 @@
     <li><strong>Mac:</strong> open the App Store, click your name at the bottom of the sidebar, then Account Settings, then Manage next to Subscriptions.</li>
   </ul>
   <p>Cancel at least 24 hours before the renewal date — and before the 14-day free trial ends if you’re on the trial and don’t want the subscription to start. To ask for a refund, use <a href="https://reportaproblem.apple.com/">Apple’s Report a Problem page</a>.</p>
+
+  <p class="group">Privacy and contact</p>
+
+  <h2>Where does what I copy go?</h2>
+  <p>Everything you copy stays on your devices and in your own iCloud account. Naskh collects no data about you, doesn’t track you, and never sends what you copy or type anywhere. The details are in the <a href="../privacy/">Privacy Policy</a>.</p>
 
   <h2>Contact us</h2>
   <p>Didn’t find your answer? <a href="../contact/">Send us a message</a>, or email <a href="mailto:hello@bishr.me">hello@bishr.me</a>, in Arabic or English.</p>

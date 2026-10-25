@@ -333,6 +333,49 @@ footer { animation: land 0.9s var(--ease) 0.7s both; }
 body .rv { opacity: 0; animation: none; }
 body .rv.in { animation: land 0.8s var(--ease) both; }
 
+/* Support: group labels, shortcut list, Free/Pro table */
+
+.doc .group {
+  margin: 48px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-2);
+  font-size: 14px;
+  font-weight: 500;
+}
+.doc .group + h2 { margin-top: 12px; }
+.doc > .meta + .group { margin-top: 20px; }
+
+.keys { margin: 0 0 12px; }
+.keys > div {
+  display: grid;
+  grid-template-columns: 5.5em 1fr;
+  gap: 12px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.keys > div:last-child { border-bottom: 0; }
+.keys dt { margin: 0; }
+.keys dd { margin: 0; }
+.keys kbd { font-size: 15px; }
+
+.plans {
+  margin: 4px 0 12px;
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.plans table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+.plans th, .plans td { padding: 10px 14px; text-align: start; vertical-align: top; }
+.plans thead th { color: var(--ink-2); font-weight: 600; border-bottom: 1px solid var(--rule); }
+.plans tbody th { font-weight: 500; }
+.plans tbody tr + tr > * { border-top: 1px solid var(--rule); }
+.plans td { white-space: nowrap; color: var(--ink-2); }
+.plans td:last-child { color: var(--ink); }
+.plans:focus-visible { outline: 2px solid var(--saffron); outline-offset: 2px; }
+
 /* Contact form */
 
 .form { display: grid; gap: 18px; margin: 8px 0 20px; }
@@ -386,6 +429,8 @@ body .rv.in { animation: land 0.8s var(--ease) both; }
   .links { font-size: 15px; }
   .links li + li::before { margin-inline: 12px; height: 12px; }
   .form button { width: 100%; }
+  .plans th, .plans td { padding: 9px 10px; }
+  .keys > div { grid-template-columns: 4.8em 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
